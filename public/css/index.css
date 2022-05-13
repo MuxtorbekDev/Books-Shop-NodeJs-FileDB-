@@ -5,18 +5,32 @@
 .form-control {
   border-radius: .5rem;
   padding: 2rem;
-  margin-bottom: 3rem;
   background: #fff;
+  width: 575px;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
 }
 .content_book {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
   gap: 2rem;
+  padding: 1rem;
+  justify-content: space-between;
+  background-color: #fdfdfd;
 }
 
 .card {
   display: flex;
   flex-direction: column;
+}
+.card img {
+  width: 100%;
+  height: 350px;
 }
 
 .card-content {
@@ -54,7 +68,7 @@ body {
 }
 
 
-.card {
+.card2 {
     margin-bottom: 30px;
     border: 0;
     -webkit-transition: all .3s ease;
@@ -65,7 +79,7 @@ body {
     box-shadow: 1px 5px 24px 0 rgba(68,102,242,.05);
 }
 
-.card .card-header {
+.card2 .card-header {
     background-color: #fff;
     border-bottom: none;
     padding: 24px;
@@ -80,7 +94,7 @@ body {
 
 
 
-.card .card-body {
+.card2 .card-body {
     padding: 30px;
     background-color: transparent;
 }
