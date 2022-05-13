@@ -1,0 +1,44 @@
+ <nav>
+    <div class="nav-wrapper navbar">
+      <a href="/" class="brand-logo">Book Shop</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+
+        {{!-- Home --}}
+        {{#if isHome}}
+          <li class="active"><a href="/">Home</a></li>
+        {{else}}
+          <li class=""><a href="/">Home</a></li>
+        {{/if}}
+
+        {{!-- Notebooks --}}
+        {{#if isNotebooks}}
+         <li  class="active" ><a href="/books">Books</a></li>
+        {{else}}
+         <li ><a href="/books">Books</a></li>
+        {{/if}}
+
+        {{!-- Add Notebook --}}
+        {{#if isAdd}}
+          <li class="active" ><a href="/add">Add Book</a></li>
+        {{else}}
+          <li><a href="/add">Add Book</a></li>
+        {{/if}}
+        
+        {{!-- About --}}
+        {{#if isAbout}}
+          <li class="active"  ><a href="/about">About</a></li>
+        {{else}}
+          <li ><a href="/about">About</a></li>
+        {{/if}}
+       
+               {{!-- Basket --}}
+        {{#if isCard}}
+          <li class="active"  ><a href="/card">Basket <sup>{{fullItemCount}}</sup> </a></li>
+        {{else}}
+          <li ><a href="/card">Basket <sup>{{fullItemCount}}</sup> </a></li>
+        {{/if}}
+        
+      </ul>
+
+    </div>
+  </nav>

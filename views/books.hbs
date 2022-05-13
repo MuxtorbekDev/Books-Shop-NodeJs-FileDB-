@@ -1,0 +1,41 @@
+<h1>Books</h1>
+
+{{#if books.length}}
+<div class="content_book">
+{{#each books}}
+  <div class="card">
+    <div class="card-image">
+      <img src="{{img}}" alt="{{title}}">
+    </div>
+    <div class="card-content">
+      <h3 class="card-title title">{{title}}</h3>
+      <p>{{descr}}</p>
+      <p class="price">{{price}}</p>
+    </div>
+    <div class="card-action actions">
+      <a href="/books/{{id}}" target="_blank">Details</a>
+      <a href="/books/{{id}}/edit?allow=true" >Edit</a>
+      <form action="/card/add" method="POST">
+      <input type="hidden" name="id" value="{{id}}">
+        <button type="submit" class="btn btn-primary">Buy</button>
+      </form>
+    </div>
+  </div>
+{{/each}}
+</div>
+{{else}}
+<div>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-body cart">
+          <div class="col-sm-12 empty-cart-cls text-center">
+            <img src="/image/notbook.png" width="130" height="130" style="background-color: aliceblue;" class="img-fluid mb-4 mr-3">
+            <h3> Books not yet</h3>
+            <a href="/add" class="btn btn-primary cart-btn-transform m-3" data-abc="true">continue shopping</a>
+         </div>
+     </div>				
+   </div>			 
+ </div>
+</div>
+{{/if}}
