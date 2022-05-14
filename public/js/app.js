@@ -27,7 +27,7 @@ if ($card) {
               <td>${c.title}</td>
               <td>${c.count}</td>
               <td>
-                <button class="btn btn-small js-remove" data-id="${c.id}">Delete</button>
+                <button class="btn btn-small red js-remove" data-id="${c.id}">Delete</button>
               </td>
             </tr>
               `;
@@ -41,7 +41,7 @@ if ($card) {
 				 
 					<div class="col-md-12">
 					
-							<div class="card">
+							<div class="card1">
 						<div class="card-header">
 						<h5>Cart</h5>
 						</div>

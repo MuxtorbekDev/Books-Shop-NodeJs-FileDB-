@@ -106,3 +106,38 @@ body {
 .text-center {
   text-align: center;
 }
+
+i.fa {
+  font-size: 2rem;
+}
+
+button.buy {
+ border-radius:  2.5rem
+}
+.home {
+  width: 100%;
+  height: calc(100vh - 65px);
+  background: url("https://m.media-amazon.com/images/G/01/sp-marketing-toolkit/guides/design/photography/stock/reading-book_303946149_21-9_1280.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.text {
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 5rem;
+  text-align: center;
+}
+.text h1 {
+  font-size: 3rem;
+  margin: 0;
+  padding: 0;
+  color: blue;
+  font-weight: 700;
+}
+.text p {
+  font-size: 1.5rem;
+  padding: 0;
+  color: rgb(82, 99, 245);
+  margin: 1rem 0;
+}

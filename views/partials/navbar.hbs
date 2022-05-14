@@ -1,6 +1,6 @@
  <nav>
     <div class="nav-wrapper navbar">
-      <a href="/" class="brand-logo">Book Shop</a>
+      <a href="/" class="brand-logo"> <i class="fa-solid fa fa-book"></i>Book Shop</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
 
         {{!-- Home --}}
@@ -33,9 +33,9 @@
        
                {{!-- Basket --}}
         {{#if isCard}}
-          <li class="active"  ><a href="/card">Basket <sup>{{fullItemCount}}</sup> </a></li>
+          <li class="active"  ><a href="/card"><i class="fa-solid  fa-cart-shopping"></i><sup>{{fullItemCount}}</sup> </a></li>
         {{else}}
-          <li ><a href="/card">Basket <sup>{{fullItemCount}}</sup> </a></li>
+          <li ><a href="/card"><i class="fa-solid  fa-cart-shopping"></i> <sup>{{fullItemCount}}</sup> </a></li>
         {{/if}}
         
       </ul>
